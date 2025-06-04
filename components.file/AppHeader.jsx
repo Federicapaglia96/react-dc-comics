@@ -1,44 +1,72 @@
-function AppHeader(){
-    return (
-       <header className="header">
-<img src="/dc-logo.png" alt="logo"/>
- <nav>
-    <ul>
-        <li>
-            <a href="">CHARACTERS</a>
-        </li>
-          <li>
-            <a href="">COMICS</a>
-        </li>
-          <li>
-            <a href="">MOVIES</a>
-        </li>
-          <li>
-            <a href="">TV</a>
-        </li>
-          <li>
-            <a href="">GAMES</a>
-        </li>
-          <li>
-            <a href="">COLLECTIBILES</a>
-        </li>
-          <li>
-            <a href="">VIDEOS</a>
-        </li>
-          <li>
-            <a href="">FANS</a>
-        </li>
-          <li>
-            <a href="">NEWS</a>
-        </li>
-          <li>
-            <a href="">SHOP</a>
-        </li>
-    </ul>
+function AppHeader() {
+  const navItems = [
+    {
+      title: "CHARACTERS",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "COMICS",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "MOVIES",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "TV",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "GAMES",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "COLLECTIBILES",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "VIDEOS",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "FANS",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "NEWS",
+      url: "/",
+      active: false,
+    },
+    {
+      title: "SHOP",
+      url: "/",
+      active: false,
+    },
 
- </nav>
-       </header> 
-    )
+  ]
+  return (
+    <header className="header">
+      <img src="/dc-logo.png" alt="logo" />
+      <nav>
+        <ul>
+          {
+            navItems.map((curItem, index) => (<li key={index}>
+              <a href={curItem.url}>{curItem.title}</a>
+            </li>)
+            )
+          }
+        </ul>
+      </nav>
+    </header>
+  )
 }
 
 export default AppHeader;

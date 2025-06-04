@@ -1,9 +1,12 @@
-function AppMain(){
+import ComicsList from "./AppComicsList";
+
+function AppMain() {         
     return (
         <main className="main">
-            <p>----Content goes here--------</p>
-        </main> 
-    )
-}
+            <h3>CURRENT SERIES</h3>
+            <ComicsList/>
+        </main>
+    );
+};
 
 export default AppMain;

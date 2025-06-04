@@ -1,7 +1,7 @@
 function AppFooter(){
     return (
         <footer className="footer">
-            <p>ciao</p>
+         
         </footer>
     )
 }
