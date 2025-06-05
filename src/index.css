@@ -108,11 +108,33 @@ h6{
 }
 
 .list{
-   list-style-type: none; 
-  display: flex;
+  list-style-type: none; 
 
 }
 
+.LinksGroup{
+  display: flex;
+  
+
+}
+
+.listGroup{
+  margin: 20px;
+  color: white;
+  
+}
+
+
+.lilinks{
+  margin: 0px;
+ 
+}
+
+.linksmall{
+  font-size: 10px;
+  margin: 1px 0;
+   font-weight: normal;
+}
 
 a{
  color: gray; 

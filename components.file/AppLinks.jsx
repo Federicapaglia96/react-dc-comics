@@ -30,49 +30,110 @@ function AppLinks() {
     }
   ];
 
-  const DC=[
-     {
-      title: "Characters",
-      url: "/characters"
+  const DC = [
+    {
+      title: "Terms of Use",
+      url: "/terms of use"
     },
     {
-      title: "Comics",
-      url: "/Comics"
+      title: "Privacy policy (New)",
+      url: "/privacy policy"
     },
     {
-      title: "Movies",
-      url: "/movies"
+      title: "Ad Choices",
+      url: "/ad choices"
     },
     {
-      title: "TV",
-      url: "/tv"
-    }
+      title: "Advertising",
+      url: "/advertising"
+     
+    },
+      {
+      title: "Jobs",
+      url: "/jobs"
+     
+    },
+      {
+      title: "Subscriptions",
+      url: "/subscriptions"
+    },
+      {
+      title: "Talent Workshop",
+      url: "/talent workshop"
+    },
+      {
+      title: "CPSC Certificates",
+      url: "/cpsc certificates"
+    },
+      {
+      title: "Ratings",   
+      url: "/ratings"
+    },
+    {
+      title: "Shop Help",
+      url: "/shop help"
+    },
 
   ];
 
+   const SITES  = [
+    {
+      title: "Terms of Use",
+      url: "/terms of use"
+    },
+    {
+      title: "Privacy policy (New)",
+      url: "/privacy policy"
+    },
+    {
+      title: "Ad Choices",
+      url: "/ad choices"
+    },
+    {
+      title: "Advertising",
+      url: "/advertising"
+     
+    },
+  ]
 
-//prima lista
+  //prima lista
   return (
     <div className="links">
       <div className="LinksGroup">
-        <h4>DC COMICS</h4>
-        <ul className="list">
-          {
-            dcComics.map((curItem, index) => (
-              <li key= {index}>
-                <a href={curItem.url}>{curItem.title}</a>
-              </li>
-            ))}
-        </ul>
-              <h4>DC</h4>
-        <ul className="list">
-          {
-            DC.map((curItem, index) => (
-              <li key= {index}>
-                <a href={curItem.url}>{curItem.title}</a>
-              </li>
-            ))}
-        </ul>
+        <div className="listGroup">
+          <h4>DC COMICS</h4>
+          <ul className="list">
+            {
+              dcComics.map((curItem, index) => (
+                <li key={index}>
+                  <a className="linksmall" href={curItem.url}>{curItem.title}</a>
+                </li>
+              ))}
+          </ul>
+        </div>
+        <div className="listGroup">
+          <h4>DC</h4>
+          <ul className="list">
+            {
+              DC.map((curItem, index) => (
+                <li className="lilinks" key={index}>
+                  <a className="linksmall" href={curItem.url}>{curItem.title}</a>
+                </li>
+              ))}
+          </ul>
+        </div>
+        <div className="listGroup">
+          <h4>SITES</h4>
+          <ul className="list">
+            {
+              SITES.map((curItem, index) => (
+                <li className="lilinks" key={index}>
+                  <a className="linksmall" href={curItem.url}>{curItem.title}</a>
+                </li>
+              ))}
+          </ul>
+        </div>
+
       </div>
       <img className="imgOverlay" src="/dc-logo-bg.png"></img>
     </div>
