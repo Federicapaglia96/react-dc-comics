@@ -84,6 +84,7 @@ a:hover {
   margin: 15px;
   height: 130px;
   width: 130px;
+  padding: 5px;
 }
 
 .card img {
@@ -101,13 +102,17 @@ a:hover {
   z-index: 2;
 }
 /* lista */
-h4{
-  color: antiquewhite;
+h6{
+  color: white;
+  font-weight: normal;
 }
 
 .list{
    list-style-type: none; 
+  display: flex;
+
 }
+
 
 a{
  color: gray; 
@@ -122,17 +127,16 @@ a{
   background-image: url(../public/footer-bg.jpg);
   height: 300px;
   align-items: center;
-
 }
 
 
 .imgOverlay {
   height: 400px;
   z-index: 1;
-
 }
 
 .footer {
+
   background-color: grey;
   height: 60px;
   position: relative;

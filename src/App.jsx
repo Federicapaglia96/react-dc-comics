@@ -5,6 +5,9 @@ import AppBanner from "../components.file/AppBanner";
 import AppLinks from "../components.file/AppLinks";
 import AppComicsList from "../components.file/AppComicsList";
 import AppImgsfondo from "../components.file/AppImgsfondo";
+import AppCard from "../components.file/AppCard";
+
+
 
 function App() {
 

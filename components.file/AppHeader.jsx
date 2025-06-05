@@ -56,7 +56,7 @@ function AppHeader() {
     <header className="header">
       <img src="/dc-logo.png" alt="logo" />
       <nav>
-        <ul>
+        <ul class="nav">
           {
             navItems.map((curItem, index) => (<li key={index}>
               <a href={curItem.url}>{curItem.title}</a>

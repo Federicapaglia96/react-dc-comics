@@ -1,17 +1,20 @@
 import comics from "./comics.js";
+import AppCard from "./AppCard";
 
 
-function ComicsList() {
+function AppComicsList() {
     console.log(comics)
     return (
         <div className="row">
             {comics.map(curComics => (
-                <div className="card">
-                    <img src={curComics.thumb} />
-                </div>
+                <AppCard 
+                key={curComics.id}
+                title={curComics.title} 
+                image={curComics.thumb}/>
+   
             ))}
         </div>
     );
 };
 
-export default ComicsList;
+export default AppComicsList;

@@ -30,9 +30,28 @@ function AppLinks() {
     }
   ];
 
+  const DC=[
+     {
+      title: "Characters",
+      url: "/characters"
+    },
+    {
+      title: "Comics",
+      url: "/Comics"
+    },
+    {
+      title: "Movies",
+      url: "/movies"
+    },
+    {
+      title: "TV",
+      url: "/tv"
+    }
+
+  ];
 
 
-
+//prima lista
   return (
     <div className="links">
       <div className="LinksGroup">
@@ -45,11 +64,21 @@ function AppLinks() {
               </li>
             ))}
         </ul>
+              <h4>DC</h4>
+        <ul className="list">
+          {
+            DC.map((curItem, index) => (
+              <li key= {index}>
+                <a href={curItem.url}>{curItem.title}</a>
+              </li>
+            ))}
+        </ul>
       </div>
       <img className="imgOverlay" src="/dc-logo-bg.png"></img>
     </div>
 
   )
-}
+};
+
 
 export default AppLinks;
